@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITABI KEEDA</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        /* Add custom styles here */
+        
+        body {
+            background-color: peachpuff;
+        }
+        
+        .nav {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .nav img {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .nav b {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 24px;
+            margin-left: 10px;
+            color: white;
+        }
+        
+        .carousel-caption {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .carousel-caption h2,
+        .carousel-caption p {
+            color: white;
+        }
+        
+        .btn-group {
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+        
+        footer h2 {
+            margin-bottom: 20px;
+        }
+        
+        footer p {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body bgcolor="peachpuff">
+    <div class="nav">
+        <nav>
+            <img src="b.jpg">
+            <b><i> KITABI KEEDA</i></b>
+        </nav>
+    </div>
+
+    <nav id="nav1" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i> KITABI KEEDA </i></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="digital.html">Digital library </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="background">
+        <header>
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+                <h1>
+                    <center><b>WELCOME TO THE WORLD OF BOOKS</b></center>
+                </h1>
+            </marquee>
+        </header>
+
+        <div class="Main">
+            <Main>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="pic" src="https://media.istockphoto.com/id/1417610330/photo/abstract-pencil-flat-lay-on-green-background-copy-space-school-stationery-flat-lay.jpg?s=170667a&w=0&k=20&c=mHrAN32I9Owd-x7tDeefEY16KP0gBzIrcdddcC9Nyok=" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="text">WELCOME TO KITABI KEEDA </h2>
+                                <p id="TEXT">Where reading meets community</p>
+                                <div class="btn-group" role="group" aria-label="Publish, Forums, Recommendations">
+                                    <button type="button" class="btn btn-danger">Publish</button>
+                                    <button type="button" class="btn btn-primary">Forums</button>
+                                    <button type="button" class="btn btn-success">Recommendations</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img id="pic" src="https://images.unsplash.com/photo-1514593214839-ce1849100055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIyfHxib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="text">WORLD BEST FORUMS</h2>
+                                <p id="TEXT">Join our forum to connect and share with like-minded individuals!</p>
+                                <div class="btn-group" role="group" aria-label="Publish, Forums, Recommendations">
+                                    <button type="button" class="btn btn-danger">Publish</button>
+                                    <button type="button" class="btn btn-primary">Forums</button>
+                                    <button type="button" class="btn btn-success">Recommendations</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img id="pic" src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="text">GREAT RECOMMENDATIONS</h2>
+                                <p id="TEXT">Expert-approved top picks for you.</p>
+                                <div class="btn-group" role="group" aria-label="Publish, Forums, Recommendations">
+                                    <button type="button" class="btn btn-danger">Publish</button>
+                                    <button type="button" class="btn btn-primary">Forums</button>
+                                    <button type="button" class="btn btn-success">Recommendations</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Main>
+        </div>
+
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>About KITABI KEEDA</h2>
+                        <p>
+                            KITABI KEEDA is a platform where book lovers can connect, share, and explore the world of books. We provide a digital library, forums for discussions, and personalized recommendations to enhance your reading experience. Join our community of avid readers
+                            today!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Get Engaged</h2>
+                        <p>
+                            Don't miss out on the latest news, book releases, and community updates. Subscribe to our newsletter and stay connected with KITABI KEEDA.
+                        </p>
+                        <a href="Form.html" class="btn btn-primary">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <div class="container">
+                <h2>Featured Books</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="book">
+                            <img src="book1.jpg" alt="Featured Book">
+                            <h4>The Book Title</h4>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="book">
+                            <img src="book2.jpg" alt="Featured Book">
+                            <h4>The Book Title</h4>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="book">
+                            <img src="book3.jpg" alt="Featured Book">
+                            <h4>The Book Title</h4>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About KITABI KEEDA</h5>
+                    <p>KITABI KEEDA is a platform where book lovers can connect, share, and explore the world of books. We provide a digital library, forums for discussions, and personalized recommendations to enhance your reading experience. Join our community
+                        of avid readers today!</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@kitabikeeda.com</p>
+                    <p>Phone: +1 123-456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <hr>
+            <p class="text-center">© 2023 KITABI KEEDA. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+
+</html>

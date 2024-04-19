@@ -1,0 +1,436 @@
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Digital library</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+
+
+
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+
+
+    <style>
+        body {
+            background-image: url('wallpaper.jpg');
+            font-size: 1.35vw;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+        
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+        
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+        
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+        
+        #nav1 {
+            background-color: rgb(240, 209, 152);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: xx-large;
+            color: #544545;
+            animation-name: text;
+            animation-duration: 2s;
+        }
+        
+        .nav img {
+            width: 45px;
+            margin: 0 12px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            border-radius: 50%;
+        }
+        
+        .container {
+            background-color: rgb(238, 215, 173);
+        }
+        
+        #dl {
+            height: 60vh;
+        }
+        
+        a:hover {
+            color: #2b0e0e;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:link {
+            color: #2b0e0e;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body bgcolor="peachpuff">
+    <div class="nav">
+        <nav>
+            <img src="b.jpg">
+            <b><i> KITABI KEEDA</i></b>
+        </nav>
+    </div>
+
+    <nav id="nav1" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <a class="navbar-brand" href="#"><i> KITABI KEEDA </i></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="digital.html">Digital library </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 margin="0px" class="fw-light">DIGITAL LIBRARY</h1>
+                        <p class="lead text-body-secondary">Discover a world of Digital Library - a beautifully designed online space that brings knowledge and convenience to your fingertips. Browse through a vast range of books. Join us today and embrace the future of education!"</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-body-tertiary ">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="p&p.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. They must overcome the titular sins of pride
+                                        and prejudice in order to fall in love and marry.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="https://www.amazon.in/Pride-Prejudice-Deluxe-Hardbound-Austen/dp/938777967X/ref=sr_1_3?keywords=pride+and+prejudice+hardcover&qid=1677997923&sprefix=pride+and+predu%2Caps%2C311&sr=8-3">Buy</a></button>
+
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://giove.isti.cnr.it/demo/eread/Libri/joy/Pride.pdf">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="r&j.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">An age-old vendetta between two powerful families erupts into bloodshed. A group of masked Montagues risk further conflict by gatecrashing a Capulet party. A young lovesick Romeo Montague falls instantly in love with
+                                        Juliet Capulet, who is due to marry her father's choice, the County Paris.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Shakespeares-Secrets-Juliet-Essays-Reflections/dp/4867500917/ref=sr_1_9?crid=9UU8WQFLS5IT&keywords=romeo+juliet+hardcover&qid=1677998884&sprefix=romeo+juliet+hard+cover%2Caps%2C436&sr=8-9">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.forgottenbooks.com/en/download/TragedyofRomeoandJuliet_10009880.pdf">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="doi.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">The Discovery of India was written by the Indian Independence leader, Jawaharlal Nehru (later India's first Prime Minister) during his incarceration in 1942–1945 at Ahmednagar Fort in present day Indian state of Maharashtra
+                                        by British colonial authorities before the independence of India.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Discovery-India-Jawaharlal-Nehru/dp/0143031031/ref=sr_1_1?keywords=discovery+of+india+hard+cover&qid=1677999046&sprefix=discovery+of++hard+cover%2Caps%2C512&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://archive.org/details/discoveryofindiabyjawaharlalnehru">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="flash.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">Struck by a bolt of lightning and doused in chemicals, Central City Police scientist Barry Allen was transformed into the fastest man alive. Tapping into the energy field called The Speed Force, he applies a tenacious
+                                        sense of justice to protect an serve the world as The Flash!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Flash-Mark-Waid-Omnibus-Vol/dp/1779513631/ref=sr_1_1?crid=3DTDNI3DP3SW8&keywords=the+flash+mark+waid+dc+comic+hardcover&qid=1677999325&sprefix=the+flash+mark+waid+dc+comic+hard+cover%2Caps%2C348&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://archive.org/details/discoveryofindiabyjawaharlalnehru">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="sap.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">The book, focusing on Homo sapiens, surveys the history of humankind, starting from the Stone Age and going up to the twenty-first century. The account is situated within a framework that intersects the natural sciences
+                                        with the social sciences. The book has gathered mixed reviews.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Sapiens-Humankind-Yuval-Noah-Harari/dp/0099590085/ref=sr_1_1?crid=17JNFL1PWM8G0&keywords=Sapiens%3A+A+Brief+History+of+Humankind+hard+cover&qid=1677999635&sprefix=the+flash+m+hard+cover%2Caps%2C1220&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.booksfree.org/sapiens-a-brief-history-of-humankind-pdf/">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="bfg.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">This story by Roald Dahl is about a young girl named Sophie who is whisked away from her home in an orphanage by the BFG – the Big Friendly Giant. He tells her about his job, to blow dreams into the rooms of children,
+                                        and also about his terrifying neighbours – other giants who EAT children.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/BFG-Roald-Dahl/dp/0141361565/ref=sr_1_1?crid=A9BZO1FIW4I4&keywords=the+bfg+by+roald+dahl+hardcover&qid=1677999918&sprefix=the+bfg+by+roald+dahlhard+cover%2Caps%2C363&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://ebooks.rahnuma.org/1553322892-Roald.Dahl_The-BFG.pdf.html">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="GG.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">Gone Girl by Gillian Flynn is a popular crime thriller novel published in 2012. The story revolves around the mysterious disappearance of Nick Dunne's wife, Amy, and keeps readers on edge as they try to uncover who
+                                        is responsible for the disappearance.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Gillian-Flynn/e/B001JP3W46?ref=sr_ntt_srch_lnk_1&qid=1678000182&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://ebooks.rahnuma.org/1553322892-Roald.Dahl_The-BFG.pdf.html">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="gim.jpg" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">A Gentleman in Moscow immerses us in another elegantly drawn era with the story of Count Alexander Rostov. When, in 1922, he is deemed an unrepentant aristocrat by a Bolshevik tribunal, the count is sentenced to house
+                                        arrest in the Metropol, a grand hotel across the street from the Kremlin.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Gentleman-Moscow-Novel-Amor-Towles/dp/0670026190">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://d-pdf.com/electronic-book/3043">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="end.jpg" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">It Ends with Us is a book that follows a girl named Lily who has just moved and is ready to start her life after college. Lily then meets a guy named Ryle and she falls for him. As she is developing feelings for Ryle,
+                                        Atlas, her first love, reappears and challenges the relationship between Lily and Ryle.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Ends-Us-Novel-Colleen-Hoover/dp/1501110365">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://icrrd.com/media/15-05-2021-052358It-Ends-with-Us.pdf">Read</a></button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">The Fault In Our Stars is a fabulous book about a young teenage girl who has been diagnosed with lung cancer and attends a cancer support group. Hazel is 16 and is reluctant to go to the support group, but she soon
+                                        realises that it was a good idea. Hazel meets a young boy named Augustus Waters.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Fault-our-Stars-John-Green/dp/0141345659/ref=sr_1_1?crid=1X5I9YUH8ITEW&keywords=fault+in+our+stars&qid=1684255385&sprefix=fault+in+%2Caps%2C333&sr=8-1">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://books-library.net/files/books-library.online-12292230Vr3R6.pdf">Read</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMUExYSFBQXFxYWGRscGhgZGRobIRsbIRgfHxwdGSAZIikkHB8mIBkfIjUjJiosLy8vGyA1OjcuOSkuLywBCgoKDg0OFg8PFjkfFh45Li4uOS4uLC8uOC4uNCwsLjk5OTkyLDUsLi4uLC45OSwxLCwsLiwwOS4uMC45OTA5Lv/AABEIARYAtgMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAABAUGBwIDCAH/xABLEAACAgAEAwYDBgIECwYHAAABAgMRAAQSIQUxQQYHEyJRYTJxgRQjQlKRoTWxYnJzswgVMzRDdJKissHwJCVTgrTRJjZUZMPS8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAwIE/8QAIREBAQEAAQMEAwAAAAAAAAAAAAECEQMhMRJBUWEEIpH/2gAMAwEAAhEDEQA/AKaZyaBJobD2+WPMGDBRgwY9SrGq6sXXOr3q+tYDzBiXdnOzUGYV28SRQcz4MZtFsNFI8flYeZyyKukEXqrGnh3ZqN8k2aZpFZVzBaipAMXhBBorWQzS6SwNLsTtgIvgw+5zhEaZODMW2uZHJBkQAFZzHsmnUwpbJvYnGXE+AiDL5fMPrYSaxKqlQUfQHjAJBq0dbsc1cdBgGDBiWDs7lzxCHIgzASNCGcuh2khVzQ0CiC9b3YHTDbmOFxR5eGdyzGSeWNgkkbDQkcTDSQppj4tWfy3W+AZcGJDxDgkQly8EXiapooJSzMhCrJFrk2Cr8I3u+QOFuX7IKc7mcoZCBHE8kTllUMKVojISCApVwWIqt8BEcGH+Pg0ZbOIRMpysDPTFQTIsscbBxp2UmQnTdihubwqXs1E0Szxs7hIC88dqGjbwTIjDy+aFiAt1YNgncEhFsGJB/iJUGXVlllkzEJnqEqNCEuFoMp1keGWY2AASOl4ZZdBEejVq0+eyCNeo1o2FDTp53ve+A04Mbfsr/l9unvf8j+hxiIjV1tv1HQWf2wGGDG37M/5Tzr63X8xWNRGAMGDBgDBgwYAwYMGAMGDBgF+R4zPCuiKQoNYfYLYcAgOpItWAJAIIIs1gynGcxGqIkhVU16RS/wCkFSA2PMGAAIawaHoMIMGAX/44m8NYdY0IpVRoj8qsbYAlbonnvvZvGM3FZnWRGe1lkErjSnmkF+bYbHzHlXM+pwiwYBeeMz+OuZ8Q+MmnS+lQRpXSuwFbAADboPTGiTOyNGIS33auzhQqinYAMRQB3CgVy8o9BhPgwC6bi0zNqZ7Ii8IHSgqPTp0ihsNPlsb1teMv8d5jn4n+h8D4U/yNVo5cq29cN+DAOEvHJ2Ls0lmSMROSqW0YqlY6bNaV35+UegxqHEpgbEhB8LwdqFxFdJRqHmFGt7PL0GEmDAOGV41mI1VEkICBwlhWKBwQ4QsCUDAmwpF2cN6mqrphXwrhU+ZkEWXieVz+FBde5PJR7mhh07admWyEsUEjapTCsklclZnfyr60qjfqb6YBkGYb1/Ye/wD+x/XGKSkcj6+nWr/kMY4VcLzKxypI6CRVO6HkQRRB9didsBqOZY9b5eh5XX8z+uNbGzZ5nG3Oz+JI8mnTqJOm7r2HtjTgDBgwYAwYMGAMOHAYIXmCzkiPSxoOsZZgpKpre1j1HbUeWG/G/K5KSQOyIWEa6nIryr67/wDLAWl2H7IcF4gzIr5mOaP4oWmjbUAd2RlTzr0sUfoQTD+3/Yqbhs2hreJyTFLXxD8rVycdR15jCjuf/i+V+cn9w+LtTi+S4o2a4ZOoEkMjqUJ3IViFljPqNr6g+x3I5hwDEm7d9jJuGzaGtonvwpa2ceh9HHUfUbYjOCrN7B9leF8QizErLmYjlhqZRMr6kKkggmMUfIwr5YrrPyws1wxtElDytJ4hv11aV9tq6Ysjub2ynGD/APbD+7nxVqch8sBL+zPCopIvvQpptSjVuFqjqrkpO9f++I9xeNhKwYKDewUgqF6aa6Vg4Wsrv4UCs0koKBVFlgSCQAPl+l4V9puAPk5VgkZTN4atKi7iNmJIS/xHRpJrbzUL54zzmzVtvavT1etjXTziZ4s835OS5v8A7vM/hQeIM0I9X2eG9HgltPweu98/fGvMZeD7DlHdjG7PmLZIlcuEZNOs6lO1mrvmcR77Q+jw9baL1aNR06qq9PK664lHZ7sTxPPRqYo38BSSjSOUQH1jDHf5qK2540eY5zZOFeJZ5PDQRxZaVkHgxsEKwowZUby2CSfriE8RdWkZlIKnTREaxA+Ub6F2Xf0269cSvifY/jWWmLGPMvI4rxYXkl1D0ZozqHyasK+zXYPic2ZSafLHRY8V83daKokhm1sQo29KHKsEOHc/2j0ZjLZRBIrM8gcKVEcgKs+txWpnAUIByAAIrcFB36H/AL1k/sov+E4T93qxDjsQhNxCeYRm7+70SaNzz8tb4dO9zhGYzPGXigieVzFFso5DTzY8lHuSBgKzwYnOa7peKpH4ngq1CyiSKzD6cifYE4g7oVJUgggkEEUQRzBB5HBXmDEu7vuwU/EpbFx5dD95LX+5HfxP+y8z0Bfe2Hdbnjm5fsmT/wCzjSI9MkQ8ojUXTOGskEkkWSSeuArrKOiuC661HNbq9ttxy3xh4TFS4U6AavoCbIF+tDE4yvYubJK8/EoIo4Kr7yRWdjR8mXWJz94TXmbZQCfXEe7O8PglSTxpdLLWkXW5BAu6BN1QBvY3tgGXBjfmM2zqiE2sYIXYA0Te9dfqce4BPjJJGFgMRqFGiRY9DXMe2McGAmPc9/F8r85P7l8I+2eaki4rmpYnKSJmZCrKaIOrmMLO57+L5X5yf3L4be8D+JZ3/WJP+LAXP2Q7VZXjeWbI5xFE+nzLy11/pYT0YcyOnuMVB297FzcNn0PbwuT4UtbMPRvRx1H1GI7lcy8brJGxR0IZWU0VI5EHF/djO1uW41l2yGeVfH07jl4lf6SP8rjmQOXMbciIZ3Of5rxj/Vh/dz4q1OQxfPZzsXNw2Li6OdcUmWuKX8wEc1hh0YWLHuDihk5DAXH3JcWhSaHLRLFrljkMzGN/F1KWIqQnT4ekIAqj8xNHnDO9v+L5v+un9ymHHuL/AItH/ZS/8OG/vZBPFs3X5lP0EKE4A7suzyZnMu8y6octE00i/n0jyx/U7n2UjrhHxPtzxCaTxftU0Y/DHFI0aIOiqqEDYbWdzW+JB3J9oIsvnHhmIEeZQR6m5BwfKG9mth8yMOnafuUzSyscm0ckLG1V30sg/KbFMB63Z9MBKO7ft3PmuH5vxXHj5WMsJCo8ylGKFhyJBQg+orFU9oe8TiOcj8KWao2HmSNQgb2at2HsTXth24tLHwvJy8OjlSXNZor9oeM2kUa8og34mNm/QE+2IBgJd3SfxbKf13/uXxLu+Htdm4M9Jl8vJ4K6I2ZowFdyV21v8Ww2ABAxEe6T+L5T+u/9y+HHv0/i0n9lF/w4BX3cd4+eXOQQTTPPDNIsbLJTEFyFVlY7imI2uqvbkRh39cNSLiQdAB48Ku1fmDMpP1Cj9MRDsb/n+T/1rL/3y4nn+ET/AJ9l/wDV/wD8jYDf3L9rM5JnI8m8twLE9RiONQNIFVoUH997xp7xO8PiWX4hmcvDmSkUbKFURwmgY1PNkJ5k9cNfcT/FU/spf5DDX3s/xbN/11/ukwDbm87mM8zyZjMa2iQsDKx5WPLGFFAn0A3NYY8Bx7gowYMGA2SkgBGUKVv8NMb/ADXzqtsa8OBzxmmjbMMWUMATQGxbe+W3/LBxwQeJ/wBnJMekVfrW/M3d87A/TAT3uf7NzR52HOTBYoVRnVndBr1ppUAar5NfLpht7edk802ezU8cfiRPI8iyI8ZXSd/zbEeh9MQfLZVpGCRxs7nkqKWJ+QUXiQQ93vE2GoZGavdQp/RiDgiNg42ZedkZZEYo6kFWU0VI5EEcjhxz/Z3OQ2ZcrPGB1aJwP1qv3w1A4Kv3sz3hDP8ADc1DMQuajy0t1sJVETedR0P5lHzGxoUCnIYX5TKzeWSINuWQFLsErRU1ytT8iCcJsxCUYoatdjRuj1G3py+mJzPDq41JzZ2WV3L8HmjzseblURweC5EjsoDagAKs8/b2wm70eHZlOIZrOR39nfRcyMrDQyIhBo38Qqv+WK8TLMwZgthKLGthZoX8ztjAKPTFcp93SZ7JQ8R++Vpb2y7iNm0vfxGNbayOR307/MWhx3uwEoYQcRzcAck+E0rSRi+YCllaj7k88Qru+4I7cGzk+S/z1nKal2dY1KFkjP4SyljtubHoKqrM69Z8TV4gPm13qB99W4OCLK4l3IZ+OzDJBMOg1NGx+jDT/vYr3ivDJsvK0E8bRyLzVv2IrYg+o2xJe77tPn4s3DHBLJIJHVTCSzqyk+bY3poWdQqq9MOHfLxyDM56TwwxeHTCJARpIXUXFdSHci/6OCtHdFw2Q5+DNUBDE7h5GdFCnwjtub/GvTr7HDj33cMkbOvm00vA0cY8RXQgMPLRAN3ddOuK0KjAFHpgJN3e8LllzsEiAaIZ4XkcsqhVDhiTqI6KeWJ1385Bppos1EUkjjhKuVkQ6SHJ3F3uG6Yp8jBpHpgJP3bcfTJcQink/wAn5kkNXSsK1fQ0T7A4tPtz3dQcQmPEIc7HGsqqXJp0NKFDqwYV5QLHteKGxjpHpgJL2l+y5dPseVl8fzBpsxWkOy2ESIWajXUSTZ1MR0UYjmDBgDBgwYDJiNqBut9+Zvp6bViSdgOx8vEcx4SnRGgDSyVelb2A9WaiAPYnpiNatq253yF8vXnXtjonu2yq5DgbZqhraOTMN1ulPhj5aFXb1JwEe7Udsstwi+H8Lhj8VKEsrDVTehPOR/WzpXl6gQGbvJ4szajnJAfRQij9AtYYNcbxySSO5zDPY2sNqNszH1u/1/RHgLQ7K98+bidVzlTxE+ZgqrIo9RppWr0IF+uEXfjJE2eieEJ4cmWjcMgAD6nchjXOxW5xAco6hgXTWoO66itj2Ycj1ujy5Hlhdx7i32h0YJoSKKOGNdWohEWhqahqJJJJoc+WAd+zPGYoonXSwIXWxv4jYFKOnMYjmeKayUDKp3Afc778+o98T7u77uos5IhzGYjQFBJ9mRgZWjNUzfkUgg9TRHKwcR/vKUDiWZRQAkbLGijkqJGqqo9AAoGM84mdXU92/U/I1vGcXxnwjiyEAgEgHmAefz9cLss+XEEgdWM5I8Nq2A69Rfw1fTVsDiQ9gux8WbliGYzCwJKSI0B+8mokHQOSLYI1NzIIANGp72t7v8r9qiE0qZPIQQJGhLqrSSF5HZUL8z5tTNRO/wA60YK07F9ssxw6UvDTI9eJG3wuBy5fCws0w/fFj5zvP4NmgGznD3aSv/Dik+ivqVv2GGbPd1kgzEcmSRM5kpdJV2mC6QSA2pkZS1UaK37gkbwjMcBZ8/JksqDKfHkji5WVVyAWPKgBZblsTgiVcd7xYVjeHheUTKK4p5tKiUr1C6b0/PUT6VzxXQGLPy3DeA5BvCzryZzMqakWIN4cbdVFFdRHI2TuOQ5Yd+M8M4Fm8hmZ8kgSaCIvpGtGFDbUjGmXpYv54CmsGHXgPB1mLGSdYIY9OuRlZzbXpVI08zsdLGtgArEnbFoduOzOUyXBActcnjywsZm5yCiy/wBVa5AevrgqmseXhfwbh/jzLDq06tRLaS5CqhdiFXdm0qaXqaG2Lam7O8Pi4BmMzlld2lSjLMoElrMqlaGyAMvIegsnAUvgx4TiyeBcG4Rk1U8Ud5My6q/2dFkqJWAZBIUq3KkEgnaxt1IVvgxd+X4f2Yz33UREMrbKQZIms8q8TyMfbfFU9sOAtks3LlWbX4ZFNy1KyhlJHQ0dx6jAM2DBgwBjpHg5+09nAse5OSeMD+miFCP9pcc3YtXuT7bpl3bI5hgsUrao3Y7JIdirXyVqHsDf5sBWublEv3oWOOtK6F2J2J1V19zhJied5/YCXIyvNEhbKSMWVlF+FZ+B65AdDyIrriB4Ax4Dh27NdncxnphDl01NtqbkqD8znoP3PS8PPefwtctm0yqGxBl4UvlZ0lmP1LE/XASHuKzjvxBVdrEeXkC7CwNUexIFkCgBZNAUKGIr3mfxTOf2x/kMSPuA/iZ/1eT/AI48RzvM/imc/tj/ACGCM+7mZjxLIqTYSYBdhsCSSL51ZJrkCTXM4kX+EA5PElBJIGXSh6W73XpeIz3bfxTJ/wBuv8jiS9/38TH+rx/8cmAiPCO12ey0TwQZh44nslV08yKJUkEoT/RIxN+7LKHL8K4jxNNpgjRRN1QBQWZffUwP/kGKtxdPcZnYcxlM1wyX8eptN0WjdAj6fdSLvpqGApUDDnwXipy/j+XV42Xkh51WvT5jtvWnlh07Z9ic1w+RlkQtDfkmUEqy3tqP4G9VPXlY3w19m+GtmMzHEkbSamGoKapL8zFvwADfUdhgpFBmpE1BHdNY0tpYrqX0ajuPY4ubvFP/AMN8P+WV/wDTtims6iLJIsbakV2CN+ZQxCt9RRxePaLh7Zvs1lvBUu0UcD6V3J8NdElAcyPMa/onBFEYunI//KL/ACf/ANXimcvCzsI0VncmgigsxPoAN7xeed4VJluy8kEtCRQSwBDaSc0G0kjbULojoQRgKIYbYv8AfgfCePKMyjmLNFF8QIwDggUBJG2zAVQYcwBvttQcSamC2BqIFnkLNWfYYsPvC4DJk3eKLJskUZiMGZjQ6qC/eNJKhsszH4Wqq2qtw29ou5jPQAtCUzKDovkkrr5WsE/In5YinFp3zmazEspEDKt6HO48NQix+ejqpdya3BurxJ+w3eXxRZY4bbOKzKuhhqerokOPN15vqG2NffR4LcWcKwQeHGJWAun0k7gczp0DBVe4MLOFRQlj40hjWtiATZsbeUHpeDAI8GDBgJr2W7zs9lEEOpZ4QK8OUFqHorDzAVtRsDoMOUveHw9jqbgeWLHmRIoBPqQIcVwBhVPkSsnhakLatBrVs1gb2o9el4Cc5zvdzQXwspBl8nH0EUYJHysaf9zEF4jn5Z5GmmkaSRubsbJ6D6AbVgzmSaOtRUglgCpPNTTDcA7H+eMxw1zKIrTUVDDcgG01gWRsdJ60PfASXsZ2zh4e/ixZPVKY/DZ3najuCxVQnlsqOprCHtf2ihzkrz/ZfCnkILMspZTQo+QoNyAN7+mGBsuwDE7FWClTYIJDdK/onGeRyjSvoStRBIB2uhdD3wD52T7Rw5N45vsglniYlZGmdRuCB5AK2Bw6dp+3WXz8iy5jh6mRVC6kzEiWoJIBAWjux3574hwyreEZtgoYJvzLFSdh6UMbl4e5Om11ldQj31VWr0q9O+m7+u2BwSOQSSBQJNC7oXsLPOuV43ZDOyQyJNE7JIhtXU0Qf+tq5EbY25bhzuoZSu5cAEkElEDtW1fCb3ONMWWJXWWVVvSC2rc1dAKCTQrpW4wFp8J788wqaZ8tHM1VqVzFf9YaXF/Kh7YYO1nefmc1G0EcaZaJ/jWL4nHUM9Dy+wAvqSNsQ2HKFmZQy+VWYtZrSBZIoXy9se5XJNI5RCrGrG5Gra6WwN/nWATYmnYTvHzPDgYlVZoSb8NyRpPUxsL031BBHXYk3D2hIUsdqbSQbBur5fTGeYypRtDMoIJDfF5SPXy38qu8BZfHO+zMSoUy2XTLswoyavEYf1fKoB9yDhq4Z3lmPIf4ulyqzRsHDs0rBn1uXJNA01td3zF4hWbynh1bobVWAGr4WWwd1A5fXfHueyZiYozKWU0Qurba+qi/peA84hLEzkxRGJKHkLmTfqdRA5+lYsbsx3z5rLxLFPEuYCABXLlHocg50sGIG11Z62d8V5nuHPFZYqQGKHSTswANbgdDzx4+QcCNttMuysLq7qm2sHb9NxeAsvjHfhmpEK5fLxwE7ayxlYe6+VVB+YI9sVzkJkfMCTMvasxaVm1sWv4vh31G7v1wikSiV9CR+hrGOAee1GTy8UgSBwwUU2qy2rnZNBSKIHl9Dj3DTDJV+VTdcxdfL9f2GDAa8GNkCodWtitKStLdt0Xblfr0xrwAuHHP8QWSUS/eVr1aWINDUDS/phuwYBw4pnlmOrSQwJ32oqTYsdGF8xz6774xnzitKZKNGPRW1/5Hw75/X9vfCHHqISQACSTQAFkk8gAOZxOAsnz5eMIwtgynxOpVVYBW9SNWx51t0GNOTzGgs296SFI6E8j9MaCOmPCwxQ4Z7iAkVxp06mRgByFB9X6tKx9sZ/4yHiCfSfFAHUadQXSG9el6fXrhtwYnAccnxBUi8EqWUsxaiAaZVHlPQjRfobIO2NSZlTH4TBqViystWLABBB2INA89j64R4MXgOUfElE8k2llDq4AUgFdS0CDtywnTMDU7EudSMtmi261Z9cJcGHAW5riBkRVcWwYEv1cBaGr1YXWrqKvlv5ns74gQeY6LGpq1FTWlSRzC0aJ/MeWEeDAKM/OJCtAjTGif7Khb+tXjfxnPiZiwMgs/CxBC7V5f0wgwYB04txJZrOkgg2p25HmGHU2NmG/Q8hjVl+JaClDUoUK6NyanLWK5EatjzFe5GEGDE4GUrWzN6kn9TeMce6jVWau66X6/PHmKDBgwYAwYMGAMGDBgNy5OQxmUIxjB0lgLANXRrltvie90HZYZid81Iagyo1eJy+9FMpF/lALm+Xlxv7qOM5BYsxk82zKcw6hCFZgbAGnyg72Bswo8vUYs/gHZyfIcIzGVWpJlTMGNoxZkZkJQ0fxXQrfl1wRzpxTMwvNPIiHQ7sYqNaRruyK3sdNqvHS/dx2Xiy2RhBy8aTNGDK1KzMx3NtvY32F0MUf2o7ET5HIQvmJQHkl2gG4S03JI5vsLo0B63tOu4vtI0eUmTMMEy8LApM7AAMw80Qvn0YAfmrqMA49su6XLTzTTxziB3CyaQgKrViRioI2bY9NwednHP7e246H198dSJw8txSSeTxNEuUSNE0sEZNbGTxCRQkUsKUkHS5IvcDnftnwM5TO5jL1SxuSnvGxBTTfPZgPofQ4BjwY9dCCQQQRzBFEfPHmCjHqITsASaugCdvpjzDz2O4i8GdgkjkMbeKilqvyMwVwQeYonbAXLkOx/CstkMt9sywaWdYwzecsZXUGgwI0bmuYG18gSKV7UcOXL5qeBL0JIwTVz0X5brrWOqO1XGMvlYTmMwToQiqBJLHkoA5k1122xy52m419pldgulC7MoITVRYkbqoqwRag6b3GCGbBgxnM4Y2FC7DYXWwq9yefP64KwwYMGAMGDBgDBgwYAwYMGAMGDBgF3A+LS5aZZ4SA6crv/AJEHp67iwdiQbJ4J345lNX2mFZrA06CIqI53s13/ANDFUYMBIO2nbCfiMqyzaVCAhI0vSouyfMTbHaz1ocsXx2E7LeFl8tBPCCsMKSW4U/fySGRwBWxj0pv7j0OOcuE5topklVdZjYPRGobdaII25iwRYFg8sdccMzSZjLxyRSMUkRWV78xFA7+h6EfPlgFD56JXERkUORYQsLI9hzxSn+EB9n+05VruTw5BIEI1BAQYib2HmL8+YvE67XZR4oMznJNAZEGlgCxtQy6zspBOsHQDVoN98UFkTlozZ1SLVeI0drqFUgU+3Pe+VVzxn6r35j0To5vHGp98/JjZydybJ5knn+uPMO6caEZPgxogvmyhmPzJND5Dlh1z2UymYbxRmFjsDUp0j57WDfvvh6+L3nZ3j8ebl9OpbPbx/LfJg4bk1fW7kiONbaqskmlVb2snD32LyUGaz0OVkRY4pWIJ3L7ISoDNyJIA2A58sN3GM3GFEEF+GDqZzzdvX5DCaCJ4mgnYMqFwystWQjiyu43HS6/54ue/es+pZj9M2Xjzft0LnOxDnKNkUk1QM4IWYa2skNetSSKa+nr0xT3eB2Dl4fNGniLKsqsyk+UjwwNStqNGgRRHP0HLHRnZ/tBBnIxNl38SOyCaI0sKtWBoq290RyIPI4g3+EFly2QjbSTpnUlhXlBRxZ2utwOYFkXizPDPXUupJZO3xJHP0sDKFLKQHGpT6jlYxrw5cW8F2X7OG0rHbauhrU1Wx2F1Xttd4b1jJBIGy1fLazQx04Y4MGDAGDBgwBgwYMAYMGDAGDBgwBgwYMA85OR1y8bx6gwzGkqhZTLaKVAKb7aSKH/iAjHRvdVk5YuHxrNF4Ls8j+GRWkPIzAafw7H4TuOuKzyPbSbheT4egyyBJAJGa7MqWGcoPwuQ4W2v4dvazO73th/jJZ5RGY4kl0R6iCWGm7atgdxtv03OCMe97LNJwnNBLtVVzXVUkVmv2pT+mOXNRqrNXddL9a9cdn5qBZEaNxaupVh6giiP0OOSO1/ZyTI5mTLSfhNo354yToYfQUfQgjpgGbBgwYKMbRNRTmwWvK24Ju6odD6c+eNaAXuaHrV/ti3O6ThGThgPEs7GyOsmmFpL0t5NQMSV5jV+Y2NjVVsEh7m+xmcyrTS5m4UlClYFYfEHJ1NpvTQ2AvcMb5Ys3iscrROISgkKnR4gLJq6awNyPljWoMgWWOk1hSWK+bRzAo8j5jz5WcLwMEUg3Y987mJMtm+GJlJNLFM5lQ3hFhuNS/AwajzIbpsTisO0/Z58nL4LywSHfeGRXqjycDzIeRojrtdHHX+OM+M39omtDGTK50MKK25NEe14BJgwYMFGDBgwBgwYMAYMGPLwGSKSQBuTsBhcvDlU1LIqH8o3I+eN3DAyRmRRbyN4aX+5H1/kcezxqpKrvZIJIV2YrzI1bKt9ed/LAa34ajWYZA9D4TsfphskBFg8xh1eNdjY9bChWFcypTytXOudA4VjJnMGBGoSNMsLEddThb/fEDz3syaZsrlQdsrk4IyP6RWz+o04uHuSyHhcKhYijKzyH3tyqn6qq4oPt/xDxuIZuXoZnVf6qHQv+6gx0nkZfsnCUf8A+nyan6pAD/MYqMuyva+DOvPGm0mXleNlJHmUMQsi+qtX0O3oTE+/3I5Zsks0p0zRuBCQLLlviQ/0aGq+hUetGkeyfaGXJZqPNISSp86/nQ/Gp+fP2IB6Y6H7fcJXinCyYPOxCzQe5AuvYspZd+RPtgOYMGMmjYEqQQVuwQQQRzsdKw6dmsr4k6RUp8ZhELF+ZmAGwIbmdyOX0wU893HZIZ+fTIyrGgJ0sxTxnG4iVhuNt2IBIXkNwRcnAOHyZqctm44fEyqKIBGHZMvJ1FFyjupAAIG2jptjRwTg8mQggybNErySWEhUkk6gDLJLICWIsfCsZFgAjTeJ/kckkS6VsmhbMSzN7sx3J3J+pwRr4RkfBQR6i+5NkVudyfmTbEkkkscOGDBgDHNffjwTwOImUfDmVElb7MKV/wBSA3/mOOlMUv8A4SCN4eTavKHlBPuVWv2B/TAUhhavD6AaR1jBoi9yR7AYy4Om7SncRKW9r6YUzbHWf8qRbE+agxIVFXlqr198RWv7DC1CObzf0hQPpWG/MQMh0sKOHAxKRW18qZErc7C46K/PljcBrjeNrOhQyE1qAsgqfkQRgGXBgwYoWQrGqhmGtm+FN6G9W1bnccuuNpzMg2Pgp/R0p++xI+pwnyMJZgoNFjQJ6bEn9tvrhwkOkt4WlIw2kFU1lqqybBJAJ/8AbEGEObdWGqgDRUKLWwbGgXSk8ufXGbTxi/w7OtEh7DtZquoPQ4R2aIob6dhdGxauB0IF3+lc8YoeVE7mhp+J9+d/h/650TgFEkykUH/NWoVzBWh0AGq+Z5H12kfZCLRKs8gNJKZwBv8A5JfEX15lBiKsCBuHAqiQ4auvmHp7bYX8LzZXxNTEBYqGkCgGZVLL6HS7H9dsASZWLUI3QqTdsGJ0mr8xOxsWb9bx0h2Yb7TwiISEP4mW0MR+LyFCfrWOZjLYcbaQy2aPwl7YkcyCaNE9aGOhu6TNGThKjqrTrXp945A9qDDb0wK5vCayNlWwPVQNvxA9NueLQ7lu3hgkXh0+8cr1C3/hyMfgP9Fjyrkx9DYrITMUSyfKoK7DYFtJHy679R749zx8OQFLVkIYMOh2K0OlYos/v67LiKVM/GKSY6Ja2+8rZtvzKCD7r74w7h+FQT5qTMyOnjQAeHCAF5rpMldaG23U2emLCYrxrgu1B5o/9mdD+w1r/sn3xH+5bsWcvEufmjPjTbIDQMcR/HuRRbmeZ01VWbIsz7JC84n+KSJWQMGalDEFgQDpvYcxY+uEHaftRDkxEGV5ZZ20xRRAF3O11ZACixZJ2vD3CqhQFAC1sBVV7Vile1fAJU47lUTMyRI4aWCSUGZEk8zSRoGIoGgaJ21D2wF0wFioLLpYgWt3R6i+vzxuw08GlzRLrmEiAXTokiZvvNrJKOLj6bam6i9rLtgNPn19NGn3vVe3tVX+2K37+5QuShIdVfx102AbGh7qwfbFnYrbv1yztkY3Q14UyknTqNFGXy+9sMBQYzT7MSpXkxSqIOx1qKv9BhS2ZS9R2NodZINlPhJUbix6YSmQg6iQefm06boDUjj0I/8A7hPdXvVczW6mj5VBP68v23ilbSoQRbAN/RIAskmqG5ptj7D6LOEwFmaT8OkrYN2WfU3ryvDZpYfha+deKNXL0q/2wQzMKCmwSaGw1Nt5ZB1G9WfXALkiiVR91d7jUbJH5jXw/Kuvzx5hHms3pooaBA+JfQfDuK8vKxz+mPcBrdgrKyMWAqiwANrzBAJofXkRhwlzCKo0GMjVrcFr8xPJF2FLtv8A+2GjMIoYhG1rtTUVvYXseW9j6Y14ocJdFoVYb3Yv4RuBZ+t+vrhODsKNWlbkDcNZH1F1fO8J8GAVq68xXMDehzO425rV2T7YxjlGkDb4Td78tdLXqSRhNgwDvlBHsDKqMm2qwwYHcg30HLbb9cdFd0nDDBw6MMukyM8lUR5WakNNytVU1745y7P8dfKv4kccDttRmiWTSR1S/hPuPbD5m+87ijyNJ9qZNS6dCKgQD2VgaP8AS5++AacxCn2mZSVRFlfYuo8okbSg3om/oKxjMAxdlTUGO+nU4JFbDQaFWDz6j2ttyUwjdXKK4X8LcjsQL+V39MOrdp5vGSVFjj8PkiJ5OWxZDakjptzwF3dzSJleGtNMwhjlmLoZG0jSVRFrXXxFTXrfyxY8sQatzQ5jamBBFNY3G9/QY5Y452ylzcQXNPJMw+FfKiIdwCqqKJ0kCyLHmo77ZdmO8TiGS8scviR1Qim1Oo/q7gr8ga9sEdTQx6RViugAAodBt6Y0Z7IRSgCSNX0m11C9J6Mp/CRXMbjFJ9ne+TNSZhFzJy8UIDMxVWW9KkhdTs2m66Ak8huRhmzPfHxLxpXidPCZ2McbxKdCX5RYok1V2TveA6OjWgAOQFc7/c88bMcv8R72OKSqU8cRg8zEiqfoxsj6VhiXtdxAG/tuavn/AJeT+RNYDr3EI73pYxwycM6Kx06A7AamDqaAsXtewxSvC+9PiUYKvMZkIqn2I3u1dKa/nYI2rEX43xR8zM88hJZyT5mZ9I/KC5JodBgFHFJYXBMbEABQqtV/DvQBpRY+W463hIZBqu/x6ufQ8iL3sYSYMFKYyo2JG12djfPdTe7XVYxZ76jdlP10nUf1ONGDAOeWaPzBtLBiSKOmqJA25C7uufLBhswYAwYMGAMPPZrJwT5jKwOH+9nCSkGrRioXQehHmvb0+QZsbMvO8bB42ZHU2rKSpU+oI3BwDy/CUkyseYhBV2zHgeGW1ByUDKyE0RVhSN/iU7YVcW7PJHmcvHCpzEeYjXwwrr55N42GtLFCVS3sCAa54ZY85mZJFYSytIgZlbxGLKApZypJtdgSd+hwpjGciijmV5kjVWaJlkICqzaHMYDWAW8poet4Be/C8vJm/s8CeImnT4pkYIXWjNPqraJQG29AD1rGH2HLSfbniWTwoYg8BZjZ++SPW224bUx09NhZo4TTHPRu4Z51dIra5GBELEHY6t0JZTQsGxgRs8FM3iTANGCW8VgzRA7GtWpkB5bEYDODhsf2RJ2U+Ic2ITuQNHhhiK6Gzzwu47wCGOOSeFi0LTJGjM28L2/iRzAcyAoIbqpvnYDY+XznmQmU6VGaYeJdAgETnzVZDA6ue49cIpfGMbSsZDHJJTOSSHkVdXmJ+JgJL338x9TgHrtBwVYXzcUcLsMsyoZjILssBqZORV99NDaxucMmYCvI5hQqnMKTdDbqff58wN8Ls3HnQGglM2lY1kaN5Dp8IUUYAtTKLFVfPbGo8GzKJ4nhsF38wZfwqHYbNuQCGrmNsAm+wSXVb3VWOdgfzZf9oY8+xPWqhVE3Y5A0f32wrXhma1aAkmoRCbSGs+FpBDgA8tNHbpWNMeWnYxhQ7GVbQKbLKGa9geQKtz5Ux9cBqbJSC/Lyo1Y6gkV67KT9MByL3Vfi08/xbbfv9aPocKfseYtV81srOtSAghAdRBDUSNJ257csIfGbnqb15n33/c/qfXAZplmIJFEA1dj25f7Q/UY9GTfUUrzCrF8rND9yP1GNSSEbAkD0BI/65D9MeiVueprNb2enL9MBtXJudwARYHMczy/W+eAZJ6utvWxy06r+VG8ahO45M36nAZn5amo89z9cBhgwYeMjw5Gyk81DXGwFksaXy8lFBTbfExa+WkEWQZ8GDBgDBgwYAwYMGAyjkKm1JB33BIO4o7j1BI+uHzPcVhfKQZfzh4Y3U/dR0WaZpBpfXqVRqo7b1y6hhwYCT8Q7SxyQywMjOAirl5SArxjyeJG4BIMZKlgLtTy+IjCLjXEYMw3jkSJJ4MaFFVNGuOJYlKtqBCEICV0kiyATzwy4MBLT2lhuUaX0vkY8uPuog3iJFEhZmDWU+6vmTuNtsI5OMwHKPk9ElBYnjet/HUtrLjxNIQiV1sC9ksHSMR7BgJRm+0yPDLAyM40KsLsAGjNoZENMbibSWAuw1Ec2w1zZ+M5OPLgN4iZiWUkgaaeONQAdVk/d3y6+27XgwEmftGiyrNC0qPHlIYkbSoIljVBq+M+Q6Pc71WM17TQeOJBB4aSZaWCZI6pWlMmt4AeQ84YIeVsoNUcRbBgF+flg0xLAHDBGErN5dbFzRCh2AGjSCNrN9MaMu8YA1qSdW9VuNtue3Jv1G+E+DAK45YQN0Ymj8iaFXR2Gxut9/wBM/GgsfdtVi/UgE3+LYnb9+WEODAbZXXSoVaI+I+v7+5/Qe+NWDBgDD/kFH2CZmNgSEBSVoMVQBlGktq6fEor13GGDDxlOIxrlXhJfxGZyKC6dJVRTWLNlehHIegwDPgwYMAYMGDAGDBgwBgwYMAYMGDAGDBgwBgwYMAYMGDAGDBgwBgwYMAYMGDAGDBgwBgwYMB//2Q=="
+                                    alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">The Night Circus is a phantasmagorical fairy tale set near an ahistorical Victorian London in a wandering, magical circus that is open only from sunset to sunrise.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Gentleman-Moscow-Novel-Amor-Towles/dp/0670026190">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://d-pdf.com/electronic-book/3043">Read Here</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+
+                                <img id="dl" src="gim.jpg" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">A Gentleman in Moscow immerses us in another elegantly drawn era with the story of Count Alexander Rostov. When, in 1922, he is deemed an unrepentant aristocrat by a Bolshevik tribunal, the count is sentenced to house
+                                        arrest in the Metropol, a grand hotel across the street from the Kremlin.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.amazon.in/Gentleman-Moscow-Novel-Amor-Towles/dp/0670026190">Buy</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://d-pdf.com/electronic-book/3043">Read Here</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

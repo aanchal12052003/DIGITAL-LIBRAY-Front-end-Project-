@@ -1,0 +1,368 @@
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>ABOUT US </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+
+
+
+
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        body {
+            background-image: url('wallpaper.jpg');
+            font-size: 1.35vw;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        #myCarousel {
+            height: 50vh;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+        
+        #dl {
+            height: 55vh;
+            width: 200vh;
+        }
+        
+        .img {
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 700px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .b-example-divider {
+            width: 70px;
+            height: 30px;
+            background-color: rgb(238, 215, 173);
+            border: solid rgb(239, 200, 128);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgb(239, 200, 128), inset 0 .125em .5em rgb(239, 200, 128);
+        }
+        
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+        
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+        
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+        
+        #nav1 {
+            background-color: rgb(240, 209, 152);
+            margin-top: 1rem;
+            margin-bottom: 1r;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: xx-large;
+            color: #544545;
+            animation-name: text;
+            animation-duration: 2s;
+        }
+        
+        .nav img {
+            width: 45px;
+            margin: 0 12px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            border-radius: 50%;
+        }
+        
+        .container {
+            background-color: rgb(238, 215, 173);
+        }
+        
+        a:hover {
+            color: #2b0e0e;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:link {
+            color: #2b0e0e;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+
+
+    <body bgcolor="peachpuff">
+        <div class="nav">
+            <nav>
+                <img src="b.jpg">
+                <b><i> KITABI KEEDA</i></b>
+            </nav>
+        </div>
+
+        <nav id="nav1" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <a class="navbar-brand" href="#"><i> KITABI KEEDA </i></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="digital.html">Digital library </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+
+
+
+        <main>
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <img id="dl" src="https://media.istockphoto.com/id/1291182390/photo/abstract-art-background-orange-and-coral-colors-watercolor-painting-on-canvas.jpg?s=612x612&w=0&k=20&c=Ou20fYqalGGAh9vLcYJqS2ZKSA-mpfFfWcmfBJpqs-k=" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>Literary Adventures Await</h1>
+                                <p>Embark on an exciting journey of imagination and knowledge with our vast collection of books - literary adventures await you!</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <img id="dl" src="https://media.istockphoto.com/id/523441661/photo/background-with-old-books.jpg?s=612x612&w=0&k=20&c=lcy-UtAKmNHMRhsI2Tm0amMBWTuKSNT94B6tQVQwyws=" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <center>
+                                    <h1>Explore Limitless Possibilities</h1>
+                                </center>
+                                <p>Experience the joy of endless discovery and learning with our digital book library - explore limitless possibilities today!</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <img id="dl" src="https://media.istockphoto.com/id/1263102051/vector/old-light-brown-or-beige-coloured-rough-and-cracked-wall-textured-smudged-effect-grunge.jpg?s=612x612&w=0&k=20&c=8GQmvP7UWsVZeoVPFO8nGq3iXk4whGEMsnC4EMywA-Q=" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>Read Anywhere, Anytime</h1>
+                                <p>Enjoy the freedom and convenience of reading your favorite books from our digital library anytime, anywhere, and on any device - read on!</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+            </div>
+
+
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img" src="https://media.istockphoto.com/id/1304750084/vector/futuristic-and-determination-concept-person-looking-into-binoculars-business-forecasting.jpg?s=612x612&w=0&k=20&c=jIYc5MRVKTX-4gmR7wvIXcsk9-HTqQM6BVVIc_zQqFc=" alt="">
+
+                        <h2 class="fw-normal">Mission </h2>
+                        <p>The mission of a digital library is to provide access to digital resources, facilitate knowledge sharing, support research and learning needs, enhance accessibility and promote intellectual engagement.</p>
+
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img" src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=
+                       " alt="">
+                        <h2 class="fw-normal">Membership</h2>
+                        <p>Membership in a digital library involves registration for access to resources, providing personal or institutional information, and may have restrictions based on level or type.</p>
+
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img" src="https://img.freepik.com/free-vector/cloud-computing-security-abstract-concept-illustration_335657-2105.jpg?size=626&ext=jpg&ga=GA1.2.1353281569.1675509798&semt=sph" alt="">
+                        <h2 class="fw-normal">Access</h2>
+                        <p>Digital library access is provided through a web interface, may require registration, and can have usage restrictions or licensing limitations.</p>
+
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+
+
+                <!-- START THE FEATURETTES -->
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">COLLECTIONS</h2>
+                        <p class="lead">A digital library is a collection of digital resources that are accessible online, including textual, image, audio, video, data, and special collections. These collections are organized and curated to make it easier for users to
+                            locate the information they need. Digital libraries offer search tools and other features to help users find and access information from anywhere with an internet connection.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" height="400px" width="400px">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">History Of digital libraries <span class="text-body-secondary">You will be amazed</span></h2>
+                        <p class="lead">The history of digital libraries dates back to the 1990s, when they were created to provide access to scientific research papers. With advances in technology, digital libraries expanded beyond scientific research to include other
+                            resources like books, images, and audiovisual materials. They are now widely used by researchers, students, and the public to access information on a range of topics, and continue to evolve with new technologies and collaborations.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" width="400px" height="400px">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Building the Future of Knowledge Access: <span class="text-body-secondary">Our Bold Goals for the Digital Library</span></h2>
+                        <p class="lead">Future goals of a digital library include expanding collections, improving search tools and user experience, implementing new technologies, increasing open access to information, collaborating with other institutions, engaging
+                            diverse audiences, and promoting lifelong learning. The ultimate goal is to provide universal access to knowledge and information, while innovating and evolving to meet the changing needs of users.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="https://media.istockphoto.com/id/1153879953/photo/goal-plan-action-text-on-light-box-on-desk-table-in-home-office.jpg?s=612x612&w=0&k=20&c=nv0XRQpgO1i6ABogoe0T4t6aj2-_qFWfjK2UnvTGJ14=" alt="" height="400px" width="400px">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+            </div>
+
+        </main>
+
+
+        <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+        <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN AND REGISTER</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <img src="b.jpg" alt="Logo">
+            <b><i> KITABI KEEDA</i></b>
+        </nav>
+    </div>
+    <nav>
+        <div class="log">
+            <div class="LOGIN">
+                <div class="button">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()"> LOG IN </button>
+                    <button type="button" class="toggle-btn" onclick="register()"> REGISTER </button>
+                </div>
+
+                <div class="social-icons">
+                    <img src="fb.jpg" alt="Facebook">
+                    <img src="tw.jpg" alt="Twitter">
+                    <img src="ig.jpg" alt="Instagram">
+                </div>
+
+                <form class="login-form" id="login-form" action="login.php" method="POST">
+                    <input type="text" class="input-field" name="userId" placeholder="User Id" required>
+                    <input type="password" class="input-field" name="password" placeholder="Password" required>
+                    <input type="checkbox" class="check-box" id="remember"><label for="remember">Remember Password</label>
+                    <button type="submit" class="submit-btn">LOG IN</button>
+                </form>
+
+                <form class="login-form" id="register-form" action="register.php" method="POST">
+                    <input type="text" class="input-field" name="userId" placeholder="User Id" required>
+                    <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                    <input type="password" class="input-field" name="password" placeholder="Password" required>
+                    <input type="checkbox" class="check-box" id="agree"><label for="agree">I Agree To The Terms And Conditions</label>
+                    <button type="submit" class="submit-btn">REGISTER</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        var loginForm = document.getElementById("login-form");
+        var registerForm = document.getElementById("register-form");
+        var toggleBtn = document.getElementById("btn");
+
+        function register() {
+            loginForm.style.left = "-400px";
+            registerForm.style.left = "50px";
+            toggleBtn.style.left = "110px";
+        }
+
+        function login() {
+            loginForm.style.left = "50px";
+            registerForm.style.left = "450px";
+            toggleBtn.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
